@@ -49,3 +49,4 @@ for(var x in val){
 for(var y of val){
   console.log("toutes les values : " + " " + y);
 }
+console.log("recuperation value  a travers keys: " + " " + obj[keys[0]]);
