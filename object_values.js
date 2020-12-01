@@ -23,3 +23,29 @@ console.log("recuperation : " + " " + keys[0]);
 var size = keys.length;
 console.log("size : " + " " + size);
 console.log("recuperation : " + " " + keys[4]);
+// Another example :
+
+var obj = {1:"a",2:"b",3:"c",4:"d",5:"e"};
+for(var i in obj){
+  console.log("keys :" + " " +i);
+  console.log("values :" + " " +obj[i]);
+}
+
+var keys = Object.keys(obj);
+console.log("recuperation : " + " " + keys[0]);
+var size = keys.length;
+console.log("size : " + " " + size);
+console.log("recuperation : " + " " + keys[4]);
+for(var k in keys){
+ console.log("index du tableau contenant toutes les keys : " + " " + k);
+}
+for(var j of keys){
+  console.log("toutes les keys : " + " " + j);
+}
+var val = Object.values(obj);
+for(var x in val){
+  console.log("index du tableau contenant toutes les values : " + " " + x);
+}
+for(var y of val){
+  console.log("toutes les values : " + " " + y);
+}
